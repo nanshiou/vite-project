@@ -1,0 +1,24 @@
+.pagination-box{
+    @apply my-2;
+    .Pagination{
+        @apply justify-end;
+    }
+    .Page{
+        @apply w-8 h-8 text-indigo-500;
+        
+        &:not(.Page-active){
+            @apply hover:bg-gray-200 border-0 #{!important};
+        }
+
+    }
+    //  Sass!important在解析階段解釋為特殊語法
+    .Page-active{
+        @apply text-white bg-indigo-500 border-0 #{!important};
+    }
+    .Control{
+        @apply w-5 h-5 #{!important};
+    }
+    .Control-active{
+        @apply hover:fill-current text-indigo-600 bg-indigo-100 rounded;
+    }
+}

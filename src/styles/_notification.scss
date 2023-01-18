@@ -1,0 +1,60 @@
+.notification{
+    @apply bg-white rounded m-4 shadow-md overflow-hidden relative;
+    .notify-content{
+        @apply p-2 w-full;
+        @apply border-l-4 border-solid ;
+        @apply flex flex-row items-center;
+        .icon{
+            @apply mr-2;
+        }
+    }
+    .notification-icon{
+        @apply w-6 h-6;
+    }
+    &.notification-default{
+        .notify-content{
+            @apply border-blue-500;
+        }
+        .notification-icon{
+            @apply text-blue-500;
+        }
+    }
+    &.notification-success{
+        .notify-content{
+            @apply border-green-500;
+        }
+        .notification-icon{
+            @apply text-green-500;
+        }
+    }
+    &.notification-warn{
+        .notify-content{
+            @apply border-yellow-500;
+        }
+        .notification-icon{
+            @apply text-yellow-500;
+        }
+    }
+    &.notification-error{
+        .notify-content{
+            @apply border-red-500;
+        }
+        .notification-icon{
+            @apply text-red-500;
+        }
+    }
+}
+
+
+.notify-info{
+    @apply w-full;
+}
+
+.notify-btn{
+    @apply w-6;
+    .close{
+        @apply w-5 h-5;
+        @apply flex items-center justify-center;
+        // @apply absolute top-2 right-2;
+    }
+}

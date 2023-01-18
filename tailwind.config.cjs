@@ -26,6 +26,9 @@ module.exports = {
         yellow: colors.yellow,
         sky: colors.sky,
       },
+      boxShadow:{
+        'lg-top': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',
+      },
       animation: {
         'ease': 'all 0.5s ease',
       }
@@ -33,7 +36,10 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
+    require("@tailwindcss/forms")({
+      strategy: 'base', // only generate global styles
+      strategy: 'class', // only generate classes
+    }),
     require('@tailwindcss/line-clamp'),
   ],
 }

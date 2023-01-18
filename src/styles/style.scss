@@ -3,9 +3,11 @@
 @import "tailwindcss/components"; /* 模組樣式 */
 @import "tailwindcss/utilities"; /* 共用樣式 */
 
-@import "_reset.scss";
-@import "_variable.scss";
-@import "_flexBox.scss";
-@import "_dataAttribute.scss";
-@import "_base.scss";
-
+@import "reset";
+@import "variable";
+@import "flexBox";
+@import "dataAttribute";
+@import "base";
+@import "form";
+@import "notification";
+@import "pagination"

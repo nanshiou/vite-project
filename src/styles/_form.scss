@@ -1,0 +1,32 @@
+
+@layer components{
+    .form-input,
+    .form-textarea,
+    .form-select,
+    [type='text'], [type='email'], [type='url'], 
+    [type='password'], [type='number'], [type='date'], 
+    [type='datetime-local'], [type='month'], [type='search'], 
+    [type='tel'], [type='time'], [type='week'], [multiple], textarea, select{
+        @apply rounded mt-1 block w-full;
+        @apply text-gray-700 text-sm;
+        @apply border-gray-300;
+        &:focus{
+            @apply border-violet-600 ring-violet-600;
+        }
+        &::placeholder{
+            @apply text-gray-400;
+        }
+    }
+    .form-checkbox, [type='checkbox']{
+        @apply  rounded text-violet-500 border-gray-300;
+        &:focus{
+            @apply border-violet-600 ring-violet-600;
+        }
+    }
+    .form-radio, [type='radio']{
+        @apply  rounded-full text-violet-500 border-gray-300;
+        &:focus{
+            @apply border-violet-600 ring-violet-600;
+        }
+    }
+}
